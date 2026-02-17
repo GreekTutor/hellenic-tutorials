@@ -20,17 +20,20 @@ const resolvedImageWithDomain = new URL(
 const { title } = Astro.props;
 
 const makeTitle = title
-  ? title + " | " + "Astroship"
-  : "Astroship - Starter Template for Astro with Tailwind CSS";
+  ? title + " | " + "Hellenic Tutorials"
+  : "Template with Tailwind CSS";
 ---
 
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/png" href="/favicon.png" />
-    <meta name="generator" content={Astro.generator} />
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png"> 
+  <meta name="generator" content={Astro.generator} />
+  <title>{title}</title>
+</head>
 
     <!-- <link rel="preload" as="image" href={src} alt="Hero" /> -->
     <SEO
